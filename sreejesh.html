@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreejesh</title>
+    <link rel="stylesheet" href="sreejesh.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+    <nav>
+        <img src="photos/sj.png" alt="" class="logo">
+        <ul id="menu-list">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Work</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+        <img src="photos/1.png" alt="" class="menu" onclick="togglemenu()">
+    </nav></div>
+    <div class="row">
+        <div class="col-1">
+
+            <h1>  Sreejesh</h1>
+            <h3>Front-End Developer</h3>
+            <P>from kerala </P>
+        </div>
+        <div class="col-2">
+            <img src="photos/sreejesh12.jpeg" alt="">
+        </div>
+    </div>
+ <div class="social-links">
+        <a href="#"><img src="photos/fb.png" alt=""></a>
+        <a href="#"><img src="photos/insta.png" alt="" class="insta"></a>
+        <a href="#"><img src="photos/twitter.png" alt=""></a>
+
+    </div>
+    </div>
+    <script>
+       var menuList=document.getElementById('menu-list');
+        menuList.style.maxHeight='0px'
+        function togglemenu(){
+            if(menuList.style.maxHeight=='0px')
+            {
+              menuList.style.maxHeight='130px'
+            }else{
+                 menuList.style.maxHeight='0px'
+            }
+        }
+    </script>
+</body>
+</html>
